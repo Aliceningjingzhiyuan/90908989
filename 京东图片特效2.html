@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jd图片特效2</title>
+	<style>
+		*{margin: 0;padding: 0;box-sizing:border-box;}
+		body{padding-top: 50px;}
+		ul,li{list-style: none;}
+		ul{width: 1230px;height: auto;margin: 0 auto;}
+		ul li{width: 100px;height: 454px;overflow: hidden;transition:all 0.7s;float: left;}
+		ul li:first-of-type{width: 730px;}
+		ul li a{display: block;width: 100%;height: 100%;overflow: hidden;}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#"><img src="images/huaden_pian01.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/huaden_pian02.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/huaden_pian03.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/huaden_pian04.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/huaden_pian05.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/huaden_pian06.jpg" alt=""></a></li>
+	</ul>
+</body>
+<script src="jquery-3.1.0.min.js"></script>
+<script language="javascript">
+	$('li').mouseover(function(){
+		$('li').stop().css({'width':100});
+		$(this).stop().css({'width':730});
+	})
+</script>
+</html>
